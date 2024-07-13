@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION part-2 ~ CSS</title>
+    <style>
+        body {
+            display: grid;
+
+        }
+
+        .container {
+            height: 25px;
+            width: 300px;
+            place-self: center;
+            border: 5px solid #000;
+            border-radius: 400px;
+            display: flex;
+            position: relative;
+            top: 150px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: 4s linear 0s infinite alternate sun-rise; */
+        }
+        .container div{
+            height: 50%;
+            width: 50%;
+            place-self: center;
+            border-radius: inherit;
+            background-color: blueviolet;
+            animation: width 1s linear 0s infinite alternate;
+        }
+        /* #mydiv{
+            height: 20%;
+            width: 100%;
+            text-align: center;
+            color:#fff ;
+            font-size: 1.2em;
+            margin: 0;
+        } */
+
+        @keyframes width {
+            to{
+               margin-left: 150px;
+            }            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><div></div></div>
+</body>
+
+</html>
